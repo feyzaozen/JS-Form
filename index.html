@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">  
+    <link rel="stylesheet" href="style.css">
+    <title>Kişi Bilgileri</title>
+</head>
+<body class="row d-flex justify-content-center m-5">
+    <div class="radio_btn col-12  row  pt-5">
+       <!--
+        <div class="col-3 customRadio ">
+            <input type="radio" name="gercek" value="Gerçek" id="gercek" checked>
+            <label for="gercek">Gerçek</label>
+        </div>
+        <div class="col-3 customRadio ">
+            <input type="radio" name="tuzel" value="Tüzel" id="tuzel">
+            <label for="tuzel">Tüzel</label>
+        </div>
+-->
+       
+   
+            <div class="col-12 radio_btn customRadio row">
+                <div class="col-3">    
+                    <input type="radio" name="textEditor" id="dreamweaver" checked>
+                    <label for="dreamweaver">Gerçek</label>
+                </div>
+                <div class="col-3">
+                    <input type="radio" name="textEditor" id="sublime">
+                    <label for="sublime">Tüzel</label>
+                </div>
+            </div>
+      
+
+    </div>
+    
+
+<div></div>
+
+     
+
+
+
+
+    <div id="musteri-ara" class="row d-flex justify-content-center m-3">
+      
+        <div class="row d-flex justify-content-center  px-0">
+            <div class="col-7  ">
+                <input type="text" class="form-control" placeholder="Kişi bilgisi giriniz" aria-label="Search cards" onkeyup="searchFilter()">
+            </div>
+            <div class="col-3 ">
+                <select class="form-select" id="aramaKriteri" onchange="searchFilter()">
+                    <option value=""selected>Arama Kriteri</option>
+                    <option value="VKN">VKN</option>
+                    <option value="YKN">YKN</option>
+                    <option value="MusteriNumarasi">Müşteri Numarası</option>
+                    <option value="AdSoyadUnvan">Ad Soyad / Unvan</option>
+                    <option value="TelefonNumarasi" >Telefon Numarası</option>
+                    <option value="EPosta">E-posta</option>
+            
+                </select>
+            </div>
+            <div class="col-2 p-0">
+                <button type="button" class="btn btn-primary p-2 ">Müşteri Ara</button> 
+            </div>   
+        </div>
+    </div>
+
+    
+    <div class="row col-12 d-flex justify-content-center m-3"> 
+        <div class="tab">
+            <button class="tablinks py-2 px-5" onclick="openForm(event, 'KisiBilgileri')">Kişi Bilgileri</button>
+            <button class="tablinks py-2 px-5" onclick="openForm(event, 'NufusBilgileri')">Nüfus Bilgileri</button>
+            <button class="tablinks py-2 px-5" onclick="openForm(event, 'AdresBilgileri')">Adres Bilgileri</button>
+        </div>
+          
+        <div id="KisiBilgileri" class="tabcontent">
+
+            <form name="kisi" action="" method="get" class="row g-3">
+           
+                <div class="col-md-4 mt-5 m-0">
+                    <label for="tckn" class="form-label">TCKN</label>
+                    <input  type="number" class="form-control" id="tckn" value="NULL" placeholder="TCKN Giriniz"><p>
+                </div>
+                <div class="col-md-4 mt-5 m-0">
+                    <label for="ad" class="form-label">Adı</label>
+                    <input  type="text" class="form-control" id="ad" value="NULL" placeholder="Adı Giriniz"><p>
+                </div>
+                <div class="col-md-4 mt-5 m-0">
+                    <label for="soyad" class="form-label">Soyadı</label>
+                    <input type="text" class="form-control" id="soyad" value="NULL"  placeholder="Soyadı Giriniz"><p>
+                </div>
+        
+    
+                <div class="col-md-4 my-2">
+                    <label for="cinsiyet" class="form-label">Cinsiyet</label>
+                    <select class="form-control"  id="cinsiyet">
+                        <option selected>Seçiniz</option>
+                        <option>Bilinmiyor</option>
+                        <option>Erkek</option>
+                        <option>Kadın</option>
+                    </select>
+                </div>
+                <div class="col-md-4 m-0">
+                    <label for="meslek" class="form-label">Meslek</label>
+                    <select type="text" class="form-control" id="meslek">
+                        <option selected>Seçiniz</option>
+                        <option>Bilinmiyor</option>
+                        <option>Erkek</option>
+                        <option>Kadın</option>
+                    </select>
+                </div>
+                <div class="col-md-4 m-0">
+                    <label for="uyruk" class="form-label">Uyruk</label>
+                    <select type="text" class="form-control" id="uyruk">
+                        <option selected>Seçiniz</option>
+                        <option>Bilinmiyor</option>
+                        <option>Erkek</option>
+                        <option>Kadın</option>
+                    </select>
+                </div>
+
+                <div class="col-md-4 m-0">
+                    <label for="anneAd" class="form-label">Anne Adı</label>
+                    <input  type="text" class="form-control" id="anneAd" value="NULL"  placeholder="Anne Adı Giriniz"><p>
+                </div>
+                <div class="col-md-4 m-0">
+                    <label for="babaAd" class="form-label">Baba Adı</label>
+                    <input type="text" class="form-control" id="babaAd" value="NULL"  placeholder="Baba Adı Giriniz"><p>
+                </div>
+                <div class="col-md-4 m-0">
+                    <label for="dogumYer" class="form-label">Doğum Yeri</label>
+                    <input  type="text" class="form-control" id="dogumYer" value="NULL"  placeholder="Doğum Yeri Giriniz"><p>
+                </div>
+
+                <div class="col-md-4 m-0">
+                    <label for="dogumTarih" class="form-label">Doğum Tarihi</label>
+                    <input  type="date" class="form-control" id="dogumTarih" value="NULL"  placeholder="Tarih Seçiniz"><p>
+                </div>
+                <div class="col-md-4 m-0">
+                    <label for="vkn" class="form-label">Vergi Kimlik No</label>
+                    <input type="number" class="form-control"  id="vkn" value="NULL"  placeholder="Vergi Kimlik No Giriniz"><p>
+                </div>
+    
+                <div class="col-md-4 m-0">
+                    <label for="yknGir" class="form-label">YKN</label>
+                    <input type="number" class="form-control" id="yknGir" value="NULL"  placeholder="YKN Giriniz"><p>
+                </div>
+                
+  
+                <div class="col-md-4 m-0 ">
+                    <label for="islem" class="form-label">İşlem Bağlantısı</label>
+                    <select type="text" class="form-control" id="islem">
+                        <option selected>Seçiniz</option>
+                        <option>Bilinmiyor</option>
+                        <option>Erkek</option>
+                        <option>Kadın</option>
+                    </select>
+                </div>
+                <div class="col-md-4 m-0">
+                    
+                </div>
+                <div class="col-md-4 m-0">
+                    <label for="ekBilgi" class="form-label">Ek Bilgi</label>
+                    <textarea type="text" class="form-control" id="ekBilgi" value="NULL"  placeholder="Ek Bilgi Giriniz"></textarea>
+                </div>
+              
+            </form>
+        
+            <div class="col-1 m-0">
+                <button type="button" class="btn btn-primary p-2" onclick="getValueInput()">Ekle</button> 
+            </div>  
+          </div>
+        
+          <div id="NufusBilgileri" class="tabcontent">
+            
+            <form name="nufus" action="" method="get" class="row g-3">
+           
+                <div class="col-md-4 mt-5 m-0">
+                    <label for="ncn" class="form-label">Nüfus Cüzdanı No</label>
+                    <input  type="number" class="form-control" id="ncn" value="NULL" placeholder="Nüfus Cüzdanı No Giriniz"><p>
+                </div>
+                <div class="col-md-4 mt-5 m-0">
+                    <label for="tcksn" class="form-label">TC Kimlik Seri Numarası</label>
+                    <input  type="number" class="form-control" id="tcksn" value="NULL" placeholder="TC Kimlik Seri Numarası Giriniz"><p>
+                </div>
+                <div class="col-md-4 mt-5 m-0">
+                    <label for="tcksnGecTar" class="form-label">TC Kimlik Seri No Geçerlilik Tarihi</label>
+                    <input type="date" class="form-control" id="tcksnGecTar" value="NULL"  placeholder="Tarih Seçiniz"><p>
+                </div>
+        
+                <div class="col-md-4 m-0">
+                    <label for="surucuBelgesiNo" class="form-label">Sürücü Belgesi Numarası</label>
+                    <input  type="number" class="form-control" id="surucuBelgesiNo" value="NULL"  placeholder="Sürücü Belgesi Numarası Giriniz"><p>
+                </div>
+                <div class="col-md-4 m-0">
+                    <label for="ytSurucuBelgesiNo" class="form-label">Yeni Tip Sürücü Belgesi No</label>
+                    <input type="number" class="form-control" id="ytSurucuBelgesiNo" value="NULL"  placeholder="Yeni Tip Sürücü Belgesi No Giriniz"><p>
+                </div>
+                <div class="col-md-4 m-0">
+                    <label for="ytSurucuBelgesiGecTar" class="form-label">Yeni Tip Sürücü Belgesi No Geçerlilik Tarihi</label>
+                    <input  type="date" class="form-control" id="ytSurucuBelgesiGecTar" value="NULL"  placeholder="Tarih Seçiniz"><p>
+                </div>
+
+                <div class="col-md-4 m-0">
+                    <label for="ikametTezNo" class="form-label">İkamet Tezkeresi No</label>
+                    <input  type="number" class="form-control" id="ikametTezNo" value="NULL"  placeholder="İkamet Tezkeresi No Giriniz"><p>
+                </div>
+                <div class="col-md-4 m-0">
+                    <label for="pasaportNo" class="form-label">Pasaport No</label>
+                    <input type="number" class="form-control"  id="pasaportNo" value="NULL"  placeholder="Pasaport No Giriniz"><p>
+                </div>
+    
+                <div class="col-md-4 m-0">
+                    <label for="gecTar" class="form-label">Geçerlilik Tarihi</label>
+                    <input type="date" class="form-control" id="gecTar" value="NULL"  placeholder="Tarih Seçiniz"><p>
+                </div>
+                
+    
+                <div class="col-md-4 m-0">
+                    <label for="digerKimlik" class="form-label">Diğer Kimlik Belge Türü</label>
+                    <input type="text" class="form-control" id="digerKimlik" value="NULL"  placeholder="Diğer Kimlik Bilgisi Giriniz"><p>
+                </div>
+
+                  
+                <div class="col-md-4 m-0">
+                    <label for="digerKimlikNo" class="form-label">Diğer Kimlik Belge No</label>
+                    <input type="number" class="form-control" id="digerKimlikNo" value="NULL"  placeholder="Diğer Kimlik Belge No Giriniz"><p>
+                </div>
+
+                <div class="col-md-4 m-0">
+                </div>
+              
+            </form>
+
+        </div>
+          
+      
+        <div id="AdresBilgileri" class="tabcontent">
+        
+            <form name="adres" action="" method="get" class="row g-3">
+                <div class="col-md-4 mt-5">
+                    <label for="ePosta" class="form-label">E-Posta</label>
+                    <input  type="email" class="form-control" id="ePosta" value="NULL"  placeholder="E-Posta Giriniz"><p>
+                </div>
+                <div class="col-md-4 mt-5">
+                    <label for="faxNo" class="form-label">Fax Numarası</label>
+                    <input type="text" class="form-control"  id="faxNo" value="NULL"  placeholder="Numara Giriniz"><p>
+                </div>
+
+                <div class="col-md-4 mt-5">
+                    <label for="evTelNo" class="form-label">Ev Telefon Numarası</label>
+                    <input type="text" class="form-control" id="evTelNo" value="NULL"  placeholder="Numara Giriniz"><p>
+                </div>
+                
+
+                <div class="col-md-4 m-0">
+                    <label for="isTelNo" class="form-label">İş Telefon Numarası</label>
+                    <input type="text" class="form-control" id="isTelNo" value="NULL"  placeholder="Numara Giriniz"><p>
+                </div>
+
+                <div class="col-md-4 m-0">
+                    <label for="cepTelNo" class="form-label">Cep Telefon Numarası</label>
+                    <input type="text" class="form-control" id="cepTelNo" value="NULL"  placeholder="Numara Giriniz"><p>
+                </div>
+
+                <div class="col-md-4 m-0">
+
+                </div>
+
+            </form>
+        </div>
+        
+    </div>
+
+
+   
+    <table id="KisiBilgileriTablo" class="table table-striped">
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Ad</th>
+            <th scope="col">Soyad</th>
+        </tr>
+        <tbody id="rows">
+         
+        </tbody>
+    </table>
+
+
+</div>
+
+
+</body>
+
+
+<div></div>
+
+ 
+<script src="main.js"></script>
+</html>
