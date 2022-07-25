@@ -5,7 +5,13 @@ let KisiBilgileriArr = [];
 var i = 0;
 
 class KisiBilgileri {
-	constructor(id,TCKN,Adi, Soyadi, Cinsiyet,Meslek,Uyruk,AnneAdi,BabaAdi,DogumYeri,DogumTarihi,VergiKimlikNo,YKN,IslemBaglantisi,EkBilgi){
+	constructor(id,TCKN,Adi, Soyadi, Cinsiyet,Meslek,Uyruk,AnneAdi,
+    BabaAdi,DogumYeri,DogumTarihi,VergiKimlikNo,YKN,IslemBaglantisi,EkBilgi,
+    NufusCuzdaniNo,TCKNoSeriNo,TCKNoSeriNoGecTar,SurucuBelgesiNo,ytSurucuBelgesiNo,
+    ytSurucuBelgesiGecTar,IkametTezkeresiNo,PasaportNo,GecTar,DigerKimlik,
+    DigerKimlikNo,ePosta,FaxNo,EvTelNo,IsTelNo,CepTelNo
+
+    ){
 		    this.id = id + 1,
         this.TCKN = TCKN,
         this.Adi = Adi,
@@ -20,7 +26,27 @@ class KisiBilgileri {
         this.VergiKimlikNo = VergiKimlikNo,
         this.YKN = YKN,
         this.IslemBaglantisi = IslemBaglantisi,
-        this.EkBilgi = EkBilgi
+        this.EkBilgi = EkBilgi,
+        
+        this.NufusCuzdaniNo = NufusCuzdaniNo,
+        this.TCKNoSeriNo = TCKNoSeriNo,
+        this.TCKNoSeriNoGecTar = TCKNoSeriNoGecTar,
+        this.SurucuBelgesiNo = SurucuBelgesiNo,
+        this.ytSurucuBelgesiNo = ytSurucuBelgesiNo,
+        this.ytSurucuBelgesiGecTar = ytSurucuBelgesiGecTar,
+        this.IkametTezkeresiNo = IkametTezkeresiNo,
+        this.PasaportNo = PasaportNo,
+        this.GecTar = GecTar,
+        this.DigerKimlik = DigerKimlik,
+        this.DigerKimlikNo = DigerKimlikNo,
+
+        this.ePosta = ePosta,
+        this.FaxNo = FaxNo,
+        this.EvTelNo = EvTelNo,
+        this.IsTelNo = IsTelNo,
+        this.CepTelNo = CepTelNo
+
+
 	}
 
     printKisi(){
@@ -91,6 +117,27 @@ function getValueInput(){
     let inputYkn = document.getElementById("yknGir").value; 
     let inputIslemBag = document.getElementById("islem").value; 
     let inputEkbilgi = document.getElementById("ekBilgi").value;
+
+    let inputNufusCuzdaniNo= document.getElementById("ncn").value; 
+    let inputTCKNoSeriNo = document.getElementById("tcksn").value; 
+    let inputTCKNoSeriNoGecTar = document.getElementById("tcksnGecTar").value; 
+    let inputSurucuBelgesiNo = document.getElementById("surucuBelgesiNo").value; 
+    let inputYTSurucuBelgesiNo = document.getElementById("ytSurucuBelgesiNo").value; 
+    let inputYTSurucuBelgesiGecTar = document.getElementById("ytSurucuBelgesiGecTar").value; 
+    let inputIkametTezkeresiNo = document.getElementById("ikametTezNo").value; 
+    let inputPasaportNo = document.getElementById("pasaportNo").value; 
+    let inputGecTar = document.getElementById("gecTar").value; 
+    let inputDigerKimlik = document.getElementById("digerKimlik").value; 
+    let inputDigerKimlikNo = document.getElementById("digerKimlikNo").value; 
+
+    let inputEPosta = document.getElementById("ePosta").value; 
+    let inputFaxNo = document.getElementById("faxNo").value; 
+    let inputEvTelNo = document.getElementById("evTelNo").value;
+    let inputIsTelNo = document.getElementById("isTelNo").value; 
+    let inputCepTelNo= document.getElementById("cepTelNo").value;
+
+  
+
      
     Kisi_ = new KisiBilgileri(
         i,
@@ -107,7 +154,23 @@ function getValueInput(){
         inputVkn,
         inputYkn,
         inputIslemBag,
-        inputEkbilgi
+        inputEkbilgi,
+        inputNufusCuzdaniNo,
+        inputTCKNoSeriNo,
+        inputTCKNoSeriNoGecTar,
+        inputSurucuBelgesiNo,
+        inputYTSurucuBelgesiNo,
+        inputYTSurucuBelgesiGecTar,
+        inputIkametTezkeresiNo,
+        inputPasaportNo,
+        inputGecTar,
+        inputDigerKimlik,
+        inputDigerKimlikNo,
+        inputEPosta,
+        inputFaxNo,
+        inputEvTelNo,
+        inputIsTelNo,
+        inputCepTelNo
     );
     
     KisiBilgileriArr.push(Kisi_);
@@ -134,6 +197,22 @@ function getValueInput(){
     yknGir.value = '';
     islem.value = '';
     ekBilgi.value = '';
+    ncn.value = '';
+    tcksn.value = '';
+    tcksnGecTar.value = '';
+    surucuBelgesiNo.value = '';
+    ytSurucuBelgesiNo.value = '';
+    ytSurucuBelgesiGecTar.value = '';
+    ikametTezNo.value = '';
+    pasaportNo.value = '';
+    gecTar.value = '';
+    digerKimlik.value = '';
+    digerKimlikNo.value = '';
+    ePosta.value = '';
+    faxNo.value = '';
+    evTelNo.value = '';
+    isTelNo.value = '';
+    cepTelNo.value = '';
     
     
     console.log(KisiBilgileriArr.length);
