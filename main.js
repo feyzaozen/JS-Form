@@ -45,15 +45,25 @@ class KisiBilgileri {
     
         var newRow = document.createElement("tr");
         var newCell0 = document.createElement("td");
-        var newCell = document.createElement("td");
+        var newCell1 = document.createElement("td");
         var newCell2 = document.createElement("td");
+        var newCell2 = document.createElement("td");
+        var newCell3 = document.createElement("td");
+        var newCell4 = document.createElement("td");
+        var newCell5 = document.createElement("td");
 
         newCell0.innerHTML = this.id;
-        newCell.innerHTML = this.Adi;
+        newCell1.innerHTML = this.Adi;
         newCell2.innerHTML = this.Soyadi;
+        newCell3.innerHTML = this.TCKN;
+        newCell4.innerHTML = this.Cinsiyet;
+        newCell5.innerHTML = this.Meslek;
         newRow.append(newCell0);
-        newRow.append(newCell);
+        newRow.append(newCell1);
         newRow.append(newCell2);
+        newRow.append(newCell3);
+        newRow.append(newCell4);
+        newRow.append(newCell5);
      
         document.getElementById("rows").appendChild(newRow);
      
