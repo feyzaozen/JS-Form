@@ -10,36 +10,22 @@
 </head>
 <body class="row d-flex justify-content-center m-5">
     <div class="radio_btn col-12  row  pt-5">
-       <!--
-        <div class="col-3 customRadio ">
-            <input type="radio" name="gercek" value="Gerçek" id="gercek" checked>
-            <label for="gercek">Gerçek</label>
-        </div>
-        <div class="col-3 customRadio ">
-            <input type="radio" name="tuzel" value="Tüzel" id="tuzel">
-            <label for="tuzel">Tüzel</label>
-        </div>
--->
+ 
        
-   
             <div class="col-12 radio_btn customRadio row">
                 <div class="col-3">    
-                    <input type="radio" name="textEditor" id="dreamweaver" checked>
-                    <label for="dreamweaver">Gerçek</label>
+                    <input type="radio" name="textEditor" id="gercek" checked>
+                    <label for="gercek">Gerçek</label>
                 </div>
                 <div class="col-3">
-                    <input type="radio" name="textEditor" id="sublime">
-                    <label for="sublime">Tüzel</label>
+                    <input type="radio" name="textEditor" id="tuzel">
+                    <label for="tuzel">Tüzel</label>
                 </div>
             </div>
       
 
     </div>
     
-
-<div></div>
-
-     
 
 
 
@@ -82,15 +68,15 @@
            
                 <div class="col-md-4 mt-5 m-0">
                     <label for="tckn" class="form-label">TCKN</label>
-                    <input  type="number" class="form-control" id="tckn" value="NULL" placeholder="TCKN Giriniz"><p>
+                    <input  type="number" class="form-control" id="tckn" value="" placeholder="TCKN Giriniz"><p>
                 </div>
                 <div class="col-md-4 mt-5 m-0">
                     <label for="ad" class="form-label">Adı</label>
-                    <input  type="text" class="form-control" id="ad" value="NULL" placeholder="Adı Giriniz"><p>
+                    <input  type="text" class="form-control" id="ad" value="" placeholder="Adı Giriniz"><p>
                 </div>
                 <div class="col-md-4 mt-5 m-0">
                     <label for="soyad" class="form-label">Soyadı</label>
-                    <input type="text" class="form-control" id="soyad" value="NULL"  placeholder="Soyadı Giriniz"><p>
+                    <input type="text" class="form-control" id="soyad" value=""  placeholder="Soyadı Giriniz"><p>
                 </div>
         
     
@@ -108,8 +94,12 @@
                     <select type="text" class="form-control" id="meslek">
                         <option selected>Seçiniz</option>
                         <option>Bilinmiyor</option>
-                        <option>Erkek</option>
-                        <option>Kadın</option>
+                        <option>Tıp Doktoru</option>
+                        <option>Veteriner</option>
+                        <option>Hemşire</option>
+                        <option>Diş Hekimi</option>
+                        <option>Eczacı</option>
+                        <option>Mimar</option>
                     </select>
                 </div>
                 <div class="col-md-4 m-0">
@@ -117,36 +107,38 @@
                     <select type="text" class="form-control" id="uyruk">
                         <option selected>Seçiniz</option>
                         <option>Bilinmiyor</option>
-                        <option>Erkek</option>
-                        <option>Kadın</option>
+                        <option>Angola</option>
+                        <option>Antartika</option>
+                        <option>Arjantin</option>
+                        <option>Avusturya</option>
                     </select>
                 </div>
 
                 <div class="col-md-4 m-0">
                     <label for="anneAd" class="form-label">Anne Adı</label>
-                    <input  type="text" class="form-control" id="anneAd" value="NULL"  placeholder="Anne Adı Giriniz"><p>
+                    <input  type="text" class="form-control" id="anneAd" value=""  placeholder="Anne Adı Giriniz"><p>
                 </div>
                 <div class="col-md-4 m-0">
                     <label for="babaAd" class="form-label">Baba Adı</label>
-                    <input type="text" class="form-control" id="babaAd" value="NULL"  placeholder="Baba Adı Giriniz"><p>
+                    <input type="text" class="form-control" id="babaAd" value=""  placeholder="Baba Adı Giriniz"><p>
                 </div>
                 <div class="col-md-4 m-0">
                     <label for="dogumYer" class="form-label">Doğum Yeri</label>
-                    <input  type="text" class="form-control" id="dogumYer" value="NULL"  placeholder="Doğum Yeri Giriniz"><p>
+                    <input  type="text" class="form-control" id="dogumYer" value=""  placeholder="Doğum Yeri Giriniz"><p>
                 </div>
 
                 <div class="col-md-4 m-0">
                     <label for="dogumTarih" class="form-label">Doğum Tarihi</label>
-                    <input  type="date" class="form-control" id="dogumTarih" value="NULL"  placeholder="Tarih Seçiniz"><p>
+                    <input  type="date" class="form-control" id="dogumTarih" value=""  placeholder="Tarih Seçiniz"><p>
                 </div>
                 <div class="col-md-4 m-0">
                     <label for="vkn" class="form-label">Vergi Kimlik No</label>
-                    <input type="number" class="form-control"  id="vkn" value="NULL"  placeholder="Vergi Kimlik No Giriniz"><p>
+                    <input type="number" class="form-control"  id="vkn" value=""  placeholder="Vergi Kimlik No Giriniz"><p>
                 </div>
     
                 <div class="col-md-4 m-0">
                     <label for="yknGir" class="form-label">YKN</label>
-                    <input type="number" class="form-control" id="yknGir" value="NULL"  placeholder="YKN Giriniz"><p>
+                    <input type="number" class="form-control" id="yknGir" value=""  placeholder="YKN Giriniz"><p>
                 </div>
                 
   
@@ -154,9 +146,9 @@
                     <label for="islem" class="form-label">İşlem Bağlantısı</label>
                     <select type="text" class="form-control" id="islem">
                         <option selected>Seçiniz</option>
-                        <option>Bilinmiyor</option>
-                        <option>Erkek</option>
-                        <option>Kadın</option>
+                        <option>Adına İşlem Yapılan</option>
+                        <option>Dolaylı Olarak İlgili</option>
+                        <option>İşlemi Yapan</option>
                     </select>
                 </div>
                 <div class="col-md-4 m-0">
@@ -164,14 +156,13 @@
                 </div>
                 <div class="col-md-4 m-0">
                     <label for="ekBilgi" class="form-label">Ek Bilgi</label>
-                    <textarea type="text" class="form-control" id="ekBilgi" value="NULL"  placeholder="Ek Bilgi Giriniz"></textarea>
+                    <textarea type="text" class="form-control" id="ekBilgi" value=""  placeholder="Ek Bilgi Giriniz"></textarea>
                 </div>
               
             </form>
         
-            <div class="col-1 m-0">
-                <button type="button" class="btn btn-primary p-2" onclick="getValueInput()">Ekle</button> 
-            </div>  
+          
+      
           </div>
         
           <div id="NufusBilgileri" class="tabcontent">
@@ -180,54 +171,54 @@
            
                 <div class="col-md-4 mt-5 m-0">
                     <label for="ncn" class="form-label">Nüfus Cüzdanı No</label>
-                    <input  type="number" class="form-control" id="ncn" value="NULL" placeholder="Nüfus Cüzdanı No Giriniz"><p>
+                    <input  type="number" class="form-control" id="ncn" value="" placeholder="Nüfus Cüzdanı No Giriniz"><p>
                 </div>
                 <div class="col-md-4 mt-5 m-0">
                     <label for="tcksn" class="form-label">TC Kimlik Seri Numarası</label>
-                    <input  type="number" class="form-control" id="tcksn" value="NULL" placeholder="TC Kimlik Seri Numarası Giriniz"><p>
+                    <input  type="number" class="form-control" id="tcksn" value="" placeholder="TC Kimlik Seri Numarası Giriniz"><p>
                 </div>
                 <div class="col-md-4 mt-5 m-0">
                     <label for="tcksnGecTar" class="form-label">TC Kimlik Seri No Geçerlilik Tarihi</label>
-                    <input type="date" class="form-control" id="tcksnGecTar" value="NULL"  placeholder="Tarih Seçiniz"><p>
+                    <input type="date" class="form-control" id="tcksnGecTar" value=""  placeholder="Tarih Seçiniz"><p>
                 </div>
         
                 <div class="col-md-4 m-0">
                     <label for="surucuBelgesiNo" class="form-label">Sürücü Belgesi Numarası</label>
-                    <input  type="number" class="form-control" id="surucuBelgesiNo" value="NULL"  placeholder="Sürücü Belgesi Numarası Giriniz"><p>
+                    <input  type="number" class="form-control" id="surucuBelgesiNo" value=""  placeholder="Sürücü Belgesi Numarası Giriniz"><p>
                 </div>
                 <div class="col-md-4 m-0">
                     <label for="ytSurucuBelgesiNo" class="form-label">Yeni Tip Sürücü Belgesi No</label>
-                    <input type="number" class="form-control" id="ytSurucuBelgesiNo" value="NULL"  placeholder="Yeni Tip Sürücü Belgesi No Giriniz"><p>
+                    <input type="number" class="form-control" id="ytSurucuBelgesiNo" value=""  placeholder="Yeni Tip Sürücü Belgesi No Giriniz"><p>
                 </div>
                 <div class="col-md-4 m-0">
                     <label for="ytSurucuBelgesiGecTar" class="form-label">Yeni Tip Sürücü Belgesi No Geçerlilik Tarihi</label>
-                    <input  type="date" class="form-control" id="ytSurucuBelgesiGecTar" value="NULL"  placeholder="Tarih Seçiniz"><p>
+                    <input  type="date" class="form-control" id="ytSurucuBelgesiGecTar" value=""  placeholder="Tarih Seçiniz"><p>
                 </div>
 
                 <div class="col-md-4 m-0">
                     <label for="ikametTezNo" class="form-label">İkamet Tezkeresi No</label>
-                    <input  type="number" class="form-control" id="ikametTezNo" value="NULL"  placeholder="İkamet Tezkeresi No Giriniz"><p>
+                    <input  type="number" class="form-control" id="ikametTezNo" value=""  placeholder="İkamet Tezkeresi No Giriniz"><p>
                 </div>
                 <div class="col-md-4 m-0">
                     <label for="pasaportNo" class="form-label">Pasaport No</label>
-                    <input type="number" class="form-control"  id="pasaportNo" value="NULL"  placeholder="Pasaport No Giriniz"><p>
+                    <input type="number" class="form-control"  id="pasaportNo" value=""  placeholder="Pasaport No Giriniz"><p>
                 </div>
     
                 <div class="col-md-4 m-0">
                     <label for="gecTar" class="form-label">Geçerlilik Tarihi</label>
-                    <input type="date" class="form-control" id="gecTar" value="NULL"  placeholder="Tarih Seçiniz"><p>
+                    <input type="date" class="form-control" id="gecTar" value=""  placeholder="Tarih Seçiniz"><p>
                 </div>
                 
     
                 <div class="col-md-4 m-0">
                     <label for="digerKimlik" class="form-label">Diğer Kimlik Belge Türü</label>
-                    <input type="text" class="form-control" id="digerKimlik" value="NULL"  placeholder="Diğer Kimlik Bilgisi Giriniz"><p>
+                    <input type="text" class="form-control" id="digerKimlik" value=""  placeholder="Diğer Kimlik Bilgisi Giriniz"><p>
                 </div>
 
                   
                 <div class="col-md-4 m-0">
                     <label for="digerKimlikNo" class="form-label">Diğer Kimlik Belge No</label>
-                    <input type="number" class="form-control" id="digerKimlikNo" value="NULL"  placeholder="Diğer Kimlik Belge No Giriniz"><p>
+                    <input type="number" class="form-control" id="digerKimlikNo" value=""  placeholder="Diğer Kimlik Belge No Giriniz"><p>
                 </div>
 
                 <div class="col-md-4 m-0">
@@ -243,27 +234,27 @@
             <form name="adres" action="" method="get" class="row g-3">
                 <div class="col-md-4 mt-5">
                     <label for="ePosta" class="form-label">E-Posta</label>
-                    <input  type="email" class="form-control" id="ePosta" value="NULL"  placeholder="E-Posta Giriniz"><p>
+                    <input  type="email" class="form-control" id="ePosta" value=""  placeholder="E-Posta Giriniz"><p>
                 </div>
                 <div class="col-md-4 mt-5">
                     <label for="faxNo" class="form-label">Fax Numarası</label>
-                    <input type="text" class="form-control"  id="faxNo" value="NULL"  placeholder="Numara Giriniz"><p>
+                    <input type="text" class="form-control"  id="faxNo" value=""  placeholder="Numara Giriniz"><p>
                 </div>
 
                 <div class="col-md-4 mt-5">
                     <label for="evTelNo" class="form-label">Ev Telefon Numarası</label>
-                    <input type="text" class="form-control" id="evTelNo" value="NULL"  placeholder="Numara Giriniz"><p>
+                    <input type="text" class="form-control" id="evTelNo" value=""  placeholder="Numara Giriniz"><p>
                 </div>
                 
 
                 <div class="col-md-4 m-0">
                     <label for="isTelNo" class="form-label">İş Telefon Numarası</label>
-                    <input type="text" class="form-control" id="isTelNo" value="NULL"  placeholder="Numara Giriniz"><p>
+                    <input type="text" class="form-control" id="isTelNo" value=""  placeholder="Numara Giriniz"><p>
                 </div>
 
                 <div class="col-md-4 m-0">
                     <label for="cepTelNo" class="form-label">Cep Telefon Numarası</label>
-                    <input type="text" class="form-control" id="cepTelNo" value="NULL"  placeholder="Numara Giriniz"><p>
+                    <input type="text" class="form-control" id="cepTelNo" value=""  placeholder="Numara Giriniz"><p>
                 </div>
 
                 <div class="col-md-4 m-0">
@@ -272,21 +263,17 @@
 
             </form>
         </div>
+
+        <div class="row col-12 m-3">
+            <button type="button" class="btn btn-primary p-2" onclick="getValueInput()">Ekle</button> 
+        </div> 
+        
         
     </div>
 
 
    
-    <table id="KisiBilgileriTablo" class="table table-striped">
-        <tr>
-            <th scope="col">ID</th>
-            <th scope="col">Ad</th>
-            <th scope="col">Soyad</th>
-        </tr>
-        <tbody id="rows">
-         
-        </tbody>
-    </table>
+   
 
 
 </div>
@@ -295,7 +282,16 @@
 </body>
 
 
-<div></div>
+<table id="KisiBilgileriTablo" class="table table-striped mt-5">
+    <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Ad</th>
+        <th scope="col">Soyad</th>
+    </tr>
+    <tbody id="rows">
+     
+    </tbody>
+</table>
 
  
 <script src="main.js"></script>

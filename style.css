@@ -12,13 +12,10 @@
 }
 
  
-
-/* Style the tab */
 .tab {
     overflow: auto;
     float:left;
   
-
 }
   
 .tab button {
@@ -35,15 +32,14 @@
     
 }
   
-/* Create an active/current tablink class */
+
 .tab button.active {
     border-bottom: solid 4px #0abaf0;
 }
 
-/* Style the tab content */
+
 .tabcontent {
     display: none;
- 
 }
 
 
@@ -53,9 +49,6 @@ body{
 }
 
 
-
-
-/* custom radio */
 
 .customRadio input[type="radio"] {
   position: absolute;
@@ -101,5 +94,10 @@ body{
 
 
 
+.btn-primary{
+
+  background-color: #0abaf0;
+  border: solid #0abaf0;
+}
 
 

@@ -1,27 +1,12 @@
 
 
-function openForm(evt, formName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-   
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace("active", "");
-    }
-
-    document.getElementById(formName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
 
 let KisiBilgileriArr = [];
 var i = 0;
 
 class KisiBilgileri {
 	constructor(id,TCKN,Adi, Soyadi, Cinsiyet,Meslek,Uyruk,AnneAdi,BabaAdi,DogumYeri,DogumTarihi,VergiKimlikNo,YKN,IslemBaglantisi,EkBilgi){
-		this.id = id + 1,
+		    this.id = id + 1,
         this.TCKN = TCKN,
         this.Adi = Adi,
         this.Soyadi = Soyadi,
@@ -165,4 +150,19 @@ console.log(KisiBilgileriArr.length);
 
 
 
+function openForm(evt, formName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+ 
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace("active", "");
+  }
+
+  document.getElementById(formName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
 
